@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>快速布局</title>
+<link rel="stylesheet" type="text/css" href="./github-markdown.css">
+</head>
+<body class="markdown-body">
+<div id="wmd-preview" class="wmd-preview"><div class="md-section-divider"></div><div class="md-section-divider"></div><h1 data-anchor-id="km0n" id="快速布局">快速布局</h1><div class="md-section-divider"></div><h2 data-anchor-id="wb8f" id="示例">示例</h2><div class="md-section-divider"></div><h4 data-anchor-id="6du8" id="1基础curd布局">1，基础CURD布局</h4><div class="md-section-divider"></div><h5 data-anchor-id="ao4v" id="效果图">效果图</h5><p data-anchor-id="xm01"><a href="./dist/index.html#/curd" target="_blank"><img src="./demo/curd.png" alt="CURD"></a></p><div class="md-section-divider"></div><h5 data-anchor-id="8gkn" id="使用方法">使用方法</h5><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="y4bf" style=""><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">import</span><span class="pln"> </span><span class="typ">React</span><span class="pln"> from </span><span class="str">'react'</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"><span class="kwd">import</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="typ">VtxGrid</span><span class="pun">,</span><span class="pln"> </span><span class="typ">VtxDatagrid</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> from </span><span class="str">'vtx-ui'</span><span class="pun">;</span></code></li><li class="L2"><code class="language-javascript"><span class="kwd">import</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    </span><span class="typ">Page</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BtnWrap</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Content</span><span class="pun">,</span><span class="pln"> </span><span class="typ">TableWrap</span><span class="pun">,</span><span class="pln"> </span></code></li><li class="L4"><code class="language-javascript"><span class="pln">    </span><span class="typ">Button</span><span class="pun">,</span><span class="pln"> </span><span class="typ">TimeBox</span><span class="pun">,</span><span class="pln"> </span><span class="typ">CountDown</span></code></li><li class="L5"><code class="language-javascript"><span class="pun">}</span><span class="pln"> from </span><span class="str">'../components/layout'</span><span class="pun">;</span></code></li><li class="L6"><code class="language-javascript"></code></li><li class="L7"><code class="language-javascript"><span class="kwd">import</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="typ">Input</span><span class="pun">,</span><span class="pln"> message </span><span class="pun">}</span><span class="pln"> from </span><span class="str">'antd'</span><span class="pun">;</span></code></li><li class="L8"><code class="language-javascript"></code></li><li class="L9"><code class="language-javascript"><span class="kwd">function</span><span class="pln"> CURD</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="typ">Page</span><span class="pln"> title</span><span class="pun">=</span><span class="str">"CURD快速布局"</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">VtxGrid</span><span class="pln"> gridweight</span><span class="pun">={[</span><span class="lit">1</span><span class="pun">]}</span><span class="pln"> titles</span><span class="pun">={[</span><span class="str">'测试'</span><span class="pun">]}&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;</span><span class="typ">Input</span><span class="pun">/&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;/</span><span class="typ">VtxGrid</span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Content</span><span class="pln"> top</span><span class="pun">={</span><span class="lit">48</span><span class="pun">}&gt;</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">                </span><span class="pun">{</span><span class="com">/*按钮*/</span><span class="pun">}</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;</span><span class="typ">BtnWrap</span><span class="pln"> </span><span class="pun">&gt;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Button</span><span class="pln"> fType</span><span class="pun">=</span><span class="str">"add"</span><span class="pun">&gt;新增&lt;/</span><span class="typ">Button</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Button</span><span class="pln"> fType</span><span class="pun">=</span><span class="str">"view"</span><span class="pun">&gt;查看&lt;/</span><span class="typ">Button</span><span class="pun">&gt;</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Button</span><span class="pln"> fType</span><span class="pun">=</span><span class="str">"edit"</span><span class="pun">&gt;编辑&lt;/</span><span class="typ">Button</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Button</span><span class="pln"> fType</span><span class="pun">=</span><span class="str">"delete"</span><span class="pun">&gt;删除&lt;/</span><span class="typ">Button</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Button</span><span class="pln"> fType</span><span class="pun">=</span><span class="str">"import"</span><span class="pun">&gt;导入&lt;/</span><span class="typ">Button</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Button</span><span class="pln"> fType</span><span class="pun">=</span><span class="str">"export"</span><span class="pun">&gt;导出&lt;/</span><span class="typ">Button</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Button</span><span class="pln"> icon</span><span class="pun">=</span><span class="str">"sync"</span><span class="pun">&gt;同步&lt;/</span><span class="typ">Button</span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;/</span><span class="typ">BtnWrap</span><span class="pun">&gt;</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">                </span><span class="pun">{</span><span class="com">/*表格*/</span><span class="pun">}</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;</span><span class="typ">TableWrap</span><span class="pln"> top</span><span class="pun">={</span><span class="lit">48</span><span class="pun">}&gt;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">VtxDatagrid</span><span class="pln"> </span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                        title</span><span class="pun">={()</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">                            </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">                                </span><span class="pun">&lt;</span><span class="pln">span</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">                                    </span><span class="pun">&lt;</span><span class="typ">CountDown</span><span class="pln"> </span></code></li><li class="L3"><code class="language-javascript"><span class="pln">                                        count</span><span class="pun">={</span><span class="lit">10</span><span class="pun">}</span><span class="pln"> manual</span><span class="pun">={</span><span class="kwd">true</span><span class="pun">}</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">                                        refresh</span><span class="pun">={()</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="pun">{</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">                                            message</span><span class="pun">.</span><span class="pln">info</span><span class="pun">(</span><span class="str">'这边执行刷新操作'</span><span class="pun">);</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">                                        </span><span class="pun">}}</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">                                    </span><span class="pun">/&gt;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">                                    </span><span class="pun">&lt;</span><span class="typ">TimeBox</span><span class="pun">/&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                                </span><span class="pun">&lt;/</span><span class="pln">span</span><span class="pun">&gt;</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">                            </span><span class="pun">)</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">                        </span><span class="pun">}}</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">                        columns</span><span class="pun">={[</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">                            </span><span class="pun">{</span><span class="pln">title </span><span class="pun">:</span><span class="pln"> </span><span class="str">'测试'</span><span class="pun">,</span><span class="pln"> dataIndex </span><span class="pun">:</span><span class="pln"> </span><span class="str">'key'</span><span class="pun">,</span><span class="pln"> key </span><span class="pun">:</span><span class="pln"> </span><span class="str">'key'</span><span class="pun">},</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">                            </span><span class="pun">{</span><span class="pln">title </span><span class="pun">:</span><span class="pln"> </span><span class="str">'操作'</span><span class="pun">,</span><span class="pln"> dataIndex </span><span class="pun">:</span><span class="pln"> </span><span class="str">'action'</span><span class="pun">,</span><span class="pln"> key </span><span class="pun">:</span><span class="pln"> </span><span class="str">'action'</span><span class="pun">},</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">                        </span><span class="pun">]}</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">                        dataSource</span><span class="pun">={[]}</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">                        autoFit</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">                    </span><span class="pun">/&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;/</span><span class="typ">TableWrap</span><span class="pun">&gt;</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;/</span><span class="typ">Content</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;/</span><span class="typ">Page</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">    </span><span class="pun">);</span></code></li><li class="L3"><code class="language-javascript"><span class="pun">}</span></code></li></ol></pre><div class="md-section-divider"></div><h4 data-anchor-id="e0vq" id="2左右布局">2，左右布局</h4><div class="md-section-divider"></div><h5 data-anchor-id="ykox" id="效果图-1">效果图</h5><p data-anchor-id="s996"><a href="./dist/index.html#/tree" target="_blank"><img src="./demo/tree.png" alt="CURD" title=""></a></p><div class="md-section-divider"></div><h5 data-anchor-id="bm05" id="使用方法-1">使用方法</h5><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="ad1y" style=""><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">import</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="typ">Page</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Flex</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> from </span><span class="str">'../components/layout'</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"></code></li><li class="L2"><code class="language-javascript"><span class="pun">&lt;</span><span class="typ">Page</span><span class="pln"> title</span><span class="pun">=</span><span class="str">"左右布局"</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;</span><span class="typ">Flex</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="typ">Flex</span><span class="pun">.</span><span class="typ">Left</span><span class="pln"> space</span><span class="pun">={</span><span class="lit">10</span><span class="pun">}</span><span class="pln"> width</span><span class="pun">={</span><span class="lit">250</span><span class="pun">}&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">VtxTree</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">                isShowSearchInput </span></code></li><li class="L7"><code class="language-javascript"><span class="pln">                data</span><span class="pun">={[{</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">                    name </span><span class="pun">:</span><span class="pln"> </span><span class="str">'测试树'</span><span class="pun">,</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                    key </span><span class="pun">:</span><span class="pln"> </span><span class="str">'root'</span><span class="pun">,</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">                    children </span><span class="pun">:</span><span class="pln"> </span><span class="pun">[{</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">                        name </span><span class="pun">:</span><span class="pln"> </span><span class="str">'测试树节点一'</span><span class="pun">,</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">                        key </span><span class="pun">:</span><span class="pln"> </span><span class="str">'root1'</span><span class="pun">,</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">                    </span><span class="pun">}]</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">                </span><span class="pun">}]}</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">                isExpandAll</span><span class="pun">=</span><span class="str">"openAll"</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">            </span><span class="pun">/&gt;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;/</span><span class="typ">Flex</span><span class="pun">.</span><span class="typ">Left</span><span class="pun">&gt;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="typ">Flex</span><span class="pun">.</span><span class="typ">Right</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">            </span><span class="pun">{</span><span class="com">/*curd示例*/</span><span class="pun">}</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;/</span><span class="typ">Flex</span><span class="pun">.</span><span class="typ">Right</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;/</span><span class="typ">Flex</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pun">&lt;/</span><span class="typ">Page</span><span class="pun">&gt;</span></code></li></ol></pre><div class="md-section-divider"></div><h4 data-anchor-id="hpfp" id="3其它">3，其它</h4><div class="md-section-divider"></div><h5 data-anchor-id="2s9t" id="效果图-2">效果图</h5><p data-anchor-id="ccp3"><a href="./dist/index.html#/view" target="_blank"><img src="./demo/view.png" alt="CURD" title=""></a></p><div class="md-section-divider"></div><h5 data-anchor-id="0sp1" id="使用方法-2">使用方法</h5><div class="md-section-divider"></div><pre class="prettyprint linenums prettyprinted" data-anchor-id="t51c" style=""><ol class="linenums"><li class="L0"><code class="language-javascript"><span class="kwd">import</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="typ">Page</span><span class="pun">,</span><span class="pln"> </span><span class="typ">RadioWrap</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Content</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Cell</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> from </span><span class="str">'../components/layout'</span><span class="pun">;</span></code></li><li class="L1"><code class="language-javascript"></code></li><li class="L2"><code class="language-javascript"><span class="pun">&lt;</span><span class="typ">Page</span><span class="pln"> title</span><span class="pun">=</span><span class="str">"查看页面示例"</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;</span><span class="typ">RadioWrap</span><span class="pln"> </span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="typ">RadioGroup</span><span class="pln"> </span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">1</span><span class="pun">}&gt;苏州大型处置单位一&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">2</span><span class="pun">}&gt;苏州大型处置单位二&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">3</span><span class="pun">}&gt;苏州大型处置单位三&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">4</span><span class="pun">}&gt;苏州大型处置单位四&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">5</span><span class="pun">}&gt;苏州大型处置单位五&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">6</span><span class="pun">}&gt;苏州大型处置单位六&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">7</span><span class="pun">}&gt;苏州大型处置单位七&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">8</span><span class="pun">}&gt;苏州大型处置单位八&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">9</span><span class="pun">}&gt;苏州大型处置单位九&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Radio</span><span class="pln"> value</span><span class="pun">={</span><span class="lit">10</span><span class="pun">}&gt;苏州大型处置单位十&lt;/</span><span class="typ">Radio</span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;/</span><span class="typ">RadioGroup</span><span class="pun">&gt;</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;/</span><span class="typ">RadioWrap</span><span class="pun">&gt;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;</span><span class="typ">Content</span><span class="pln"> top</span><span class="pun">={</span><span class="lit">60</span><span class="pun">}&gt;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="typ">Cell</span><span class="pln"> space</span><span class="pun">=</span><span class="str">"0 10px"</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="pln">h5</span><span class="pun">&gt;苏州大型处置单位趋势图&lt;/</span><span class="pln">h5</span><span class="pun">&gt;</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;/</span><span class="typ">Cell</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;</span><span class="typ">Cell</span><span class="pun">&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">.</span><span class="typ">Title</span><span class="pun">&gt;测试：&lt;/</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">.</span><span class="typ">Title</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">.</span><span class="typ">Body</span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Input</span><span class="pln"> </span><span class="pun">/&gt;</span></code></li><li class="L6"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;/</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">.</span><span class="typ">Body</span><span class="pun">&gt;</span></code></li><li class="L7"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;/</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">&gt;</span></code></li><li class="L8"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">&gt;</span></code></li><li class="L9"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">.</span><span class="typ">Title</span><span class="pun">&gt;测试：&lt;/</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">.</span><span class="typ">Title</span><span class="pun">&gt;</span></code></li><li class="L0"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">.</span><span class="typ">Body</span><span class="pun">&gt;</span></code></li><li class="L1"><code class="language-javascript"><span class="pln">                    </span><span class="pun">&lt;</span><span class="typ">Input</span><span class="pln"> </span><span class="pun">/&gt;</span></code></li><li class="L2"><code class="language-javascript"><span class="pln">                </span><span class="pun">&lt;/</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">.</span><span class="typ">Body</span><span class="pun">&gt;</span></code></li><li class="L3"><code class="language-javascript"><span class="pln">            </span><span class="pun">&lt;/</span><span class="typ">Cell</span><span class="pun">.</span><span class="typ">Item</span><span class="pun">&gt;</span></code></li><li class="L4"><code class="language-javascript"><span class="pln">        </span><span class="pun">&lt;/</span><span class="typ">Cell</span><span class="pun">&gt;</span></code></li><li class="L5"><code class="language-javascript"><span class="pln">    </span><span class="pun">&lt;/</span><span class="typ">Content</span><span class="pun">&gt;</span></code></li><li class="L6"><code class="language-javascript"><span class="pun">&lt;/</span><span class="typ">Page</span><span class="pun">&gt;</span></code></li></ol></pre><div class="md-section-divider"></div><h2 data-anchor-id="6w1b" id="api">API</h2><div class="md-section-divider"></div><h3 data-anchor-id="92s9" id="page">Page</h3><p data-anchor-id="z3k8">页面</p><table data-anchor-id="utn2" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+<tr>
+ <td>space</td>
+ <td>内间距</td>
+ <td>number|string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>title</td>
+ <td>HTML title</td>
+ <td>string</td>
+ <td></td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="1x64" id="content">Content</h3><p data-anchor-id="8ogo">内容</p><table data-anchor-id="b8di" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+<tr>
+ <td>space</td>
+ <td>内间距</td>
+ <td>number|string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>top</td>
+ <td>元素的顶部边缘</td>
+ <td>number</td>
+ <td></td>
+</tr>
+<tr>
+ <td>scrollY</td>
+ <td>Y轴是否可滚动</td>
+ <td>boolean</td>
+ <td>false</td>
+</tr>
+<tr>
+ <td>relative</td>
+ <td>是否相对定位</td>
+ <td>boolean</td>
+ <td>false</td>
+</tr>
+<tr>
+ <td>height</td>
+ <td>高度</td>
+ <td>number</td>
+ <td></td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="eg62" id="btnwrap">BtnWrap</h3><p data-anchor-id="574a">按钮块</p><table data-anchor-id="0dpl" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+<tr>
+ <td>space</td>
+ <td>内间距</td>
+ <td>number|string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>top</td>
+ <td>元素的顶部边缘</td>
+ <td>number</td>
+ <td></td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="nqyj" id="tablewrap">TableWrap</h3><p data-anchor-id="vo5c">表格容器</p><table data-anchor-id="z0s9" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+<tr>
+ <td>space</td>
+ <td>内间距</td>
+ <td>number|string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>top</td>
+ <td>元素的顶部边缘</td>
+ <td>number</td>
+ <td></td>
+</tr>
+<tr>
+ <td>relative</td>
+ <td>是否相对定位</td>
+ <td>boolean</td>
+ <td>false</td>
+</tr>
+<tr>
+ <td>height</td>
+ <td>高度（相对定位时生效）</td>
+ <td>number</td>
+ <td></td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="mm1n" id="radiowrap">RadioWrap</h3><p data-anchor-id="3jgp">顶部radio容器</p><table data-anchor-id="z8y8" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+<tr>
+ <td>space</td>
+ <td>内间距</td>
+ <td>number|string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>shadow</td>
+ <td>是否显示阴影</td>
+ <td>boolean</td>
+ <td>true</td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="orir" id="modalbodywrap">ModalBodyWrap</h3><p data-anchor-id="i5zq">moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)</p><table data-anchor-id="4ra3" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+<tr>
+ <td>loading</td>
+ <td>加载中</td>
+ <td>boolean</td>
+ <td>false</td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="qj5j" id="flex">Flex</h3><p data-anchor-id="8ad4">左右布局</p><table data-anchor-id="w64y" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h4 data-anchor-id="lxoz" id="flexleft">Flex.Left</h4><table data-anchor-id="5ndn" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+<tr>
+ <td>width</td>
+ <td>宽</td>
+ <td>number</td>
+ <td>250</td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h4 data-anchor-id="ens4" id="flexright">Flex.Right</h4><table data-anchor-id="zwmq" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>className</td>
+ <td>className</td>
+ <td>string</td>
+ <td></td>
+</tr>
+<tr>
+ <td>style</td>
+ <td>style</td>
+ <td>object</td>
+ <td></td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="3xai" id="button">Button</h3><p data-anchor-id="e9ge">立意 ： 为了按钮Icon图表和样式的统一管理</p><table data-anchor-id="pcye" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>fType</td>
+ <td>类型</td>
+ <td>string（add:新增，view:查看，edit:修改，delete:删除，import:导入，export:导出）</td>
+ <td></td>
+</tr>
+<tr>
+ <td>...</td>
+ <td>参考antd Button</td>
+ <td></td>
+ <td></td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="97pc" id="countdown">CountDown</h3><p data-anchor-id="oax2">倒计时刷新数据</p><table data-anchor-id="66qo" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+ <td>count</td>
+ <td>多少秒计时</td>
+ <td>number</td>
+ <td>10</td>
+</tr>
+<tr>
+ <td>manual</td>
+ <td>是否显示手动刷新</td>
+ <td>boolean</td>
+ <td>true</td>
+</tr>
+<tr>
+ <td>isDestroy</td>
+ <td>是否直接销毁定时器（适用于tab切换场景）</td>
+ <td>boolean</td>
+ <td>false</td>
+</tr>
+<tr>
+ <td>refresh</td>
+ <td>刷新回调函数，在此执行数据刷新</td>
+ <td>function</td>
+ <td></td>
+</tr>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="6tpp" id="timebox">TimeBox</h3><p data-anchor-id="stbp">时间沙盒</p><table data-anchor-id="1o3f" class="table table-striped-white table-bordered">
+<thead>
+<tr>
+ <th>参数</th>
+ <th>说明</th>
+ <th>类型</th>
+ <th>默认值</th>
+</tr>
+</thead>
+</table></div>
+</body>
+</html>
