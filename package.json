@@ -1,11 +1,12 @@
 {
-  "name": "vtx-layout",
+  "name": "react-layout",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
     "build": "rimraf lib && babel src --out-dir lib && node build.js"
   },
+  "homepage": "https://github.com/yemuguliunian/react-layout",
   "keywords": [
     "react"
   ],
