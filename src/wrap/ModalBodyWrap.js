@@ -10,6 +10,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import container from '../Container';
+import { Spin } from 'antd';
 
 import '../assets/style/index.less';
 
