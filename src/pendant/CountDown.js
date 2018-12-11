@@ -12,7 +12,10 @@ import PropTypes from 'prop-types';
 
 import '../assets/style/index.less';
 
-import { Checkbox, Tag } from 'antd';
+import Checkbox from 'antd/lib/checkbox';
+import 'antd/lib/checkbox/style/css';
+import Tag from 'antd/lib/tag';
+import 'antd/lib/tag/style/css';
 
 class CountDown extends React.Component {
 

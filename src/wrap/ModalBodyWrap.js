@@ -17,11 +17,11 @@ import '../assets/style/index.less';
 
 function ModalBodyWrap(props) {
 
-	const {
+    const {
         className, style, loading = false
     } = props;
     
-	return (
+    return (
         <Spin spinning={loading}>
             <div 
                 style={style} 
@@ -38,5 +38,5 @@ ModalBodyWrap.propTypes = {
 }
 
 export default container(
-	{componentClass : 'vtx_modal_content_5'}
+    {componentClass : 'vtx_modal_content_5'}
 )(ModalBodyWrap); 

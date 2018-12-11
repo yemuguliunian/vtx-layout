@@ -265,3 +265,12 @@
   margin: 20px 0;
   font-weight: 200;
 }
+.vtx_report {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  bottom: 5px;
+  top: 48px;
+}

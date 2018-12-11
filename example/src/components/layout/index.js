@@ -26,3 +26,4 @@ export { default as ScrollableRow } from './other/scrollableRow';
 // 基础页面
 export { default as Nodata } from './page/Nodata';
 export { default as NotFound } from './page/NotFound';
+export { default as Report } from './page/Report';

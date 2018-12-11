@@ -20,6 +20,9 @@ const routes = [{
 }, {
     path: '/nodata',
     component: () => Nodata,
+}, {
+    path: '/report',
+    component: () => import('./routes/REPORT'),
 }];
 
 function RouterConfig({ history, app }) {

@@ -10,16 +10,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import container from '../Container';
+import Spin from 'antd/lib/spin';
+import 'antd/lib/spin/style/css';
 
 import '../assets/style/index.less';
 
 function ModalBodyWrap(props) {
 
-	const {
+    const {
         className, style, loading = false
     } = props;
     
-	return (
+    return (
         <Spin spinning={loading}>
             <div 
                 style={style} 
@@ -36,5 +38,5 @@ ModalBodyWrap.propTypes = {
 }
 
 export default container(
-	{componentClass : 'vtx_modal_content_5'}
+    {componentClass : 'vtx_modal_content_5'}
 )(ModalBodyWrap); 
