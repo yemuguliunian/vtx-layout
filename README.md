@@ -40,7 +40,7 @@ import { VtxGrid, VtxDatagrid } from 'vtx-ui';
 import { 
     Page, BtnWrap, Content, TableWrap, 
     Button, TimeBox, CountDown
-} from '../components/layout';
+} from 'rc-layout';
 
 import { Input, message } from 'antd';
 
@@ -95,7 +95,7 @@ function CURD() {
 ![CURD][2]
 ##### 使用方法
 ```javascript
-import { Page, Flex } from '../components/layout';
+import { Page, Flex } from 'rc-layout';
 
 <Page title="左右布局">
     <Flex>
@@ -124,7 +124,7 @@ import { Page, Flex } from '../components/layout';
 ![CURD][3]
 ##### 使用方法
 ```javascript
-import { Page, RadioWrap, Content, Cell } from '../components/layout';
+import { Page, RadioWrap, Content, Cell } from 'rc-layout';
 
 <Page title="查看页面示例">
     <RadioWrap >
