@@ -1,4 +1,34 @@
-﻿# 快速布局
+# 快速布局
+
+## 安装
+$ npm install rc-layout --save
+
+## 使用
+```javascript
+// 容器
+$ import { Page } from 'rc-layout';
+$ import { RadioWrap } from 'rc-layout';
+$ import { BtnWrap } from 'rc-layout';
+$ import { Content } from 'rc-layout';
+$ import { TableWrap } from 'rc-layout';
+$ import { ModalBodyWrap } from 'rc-layout';
+$ import { Flex } from 'rc-layout';
+
+// 小部件
+$ import { Button } from 'rc-layout';
+$ import { TimeBox } from 'rc-layout';
+$ import { CountDown } from 'rc-layout';
+
+// 其它
+$ import { ReactDoucmentTitle } from 'rc-layout';
+$ import { ScrollableRow } from 'rc-layout';
+
+// 基础页面
+$ import { Nodata } from 'rc-layout';
+$ import { NotFound } from 'rc-layout';
+$ import { Report } from 'rc-layout';
+```
+
 ## 示例
 #### 1，基础CURD布局
 ##### 效果图
@@ -62,7 +92,7 @@ function CURD() {
 ```
 #### 2，左右布局
 ##### 效果图
-![左右布局][2]
+![CURD][2]
 ##### 使用方法
 ```javascript
 import { Page, Flex } from '../components/layout';
@@ -91,7 +121,7 @@ import { Page, Flex } from '../components/layout';
 ```
 #### 3，其它
 ##### 效果图
-![其他][3]
+![CURD][3]
 ##### 使用方法
 ```javascript
 import { Page, RadioWrap, Content, Cell } from '../components/layout';
@@ -217,13 +247,14 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | ------------- |-------------| -----|-----|
 | className     | className | string  | |
 | style     | style | object  | |
+|leftWidth | 宽（和Flex.Left width一致）| number | 250 |
 
 ### Button
 立意 ： 为了按钮Icon图表和样式的统一管理
 
 | 参数        | 说明           | 类型  | 默认值 |
 | ------------- |-------------| -----|-----|
-| fType     | 类型 | string（add:新增，view:查看，edit:修改，delete:删除，import:导入，export:导出）  | |
+| fType     | 类型 | string（add:新增，view:查看，edit:修改，delete:删除，import:导入）  | |
 | ... | 参考antd Button |  |  |
 
 ### CountDown
@@ -241,8 +272,36 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 
 | 参数        | 说明           | 类型  | 默认值 |
 | ------------- |-------------| -----|-----|
+|..| |||
 
+### Nodata
+无数据
 
-  [1]: ./doc/demo/curd.png
-  [2]: ./doc/demo/tree.png
-  [3]: ./doc/demo/view.png
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+| className     | className | string  | |
+| style     | style | object  | |
+| tip | 提示语 | string | 暂无数据 |
+| src | 图片 |  string | |
+
+### NotFound
+404
+
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+| className     | className | string  | |
+| style     | style | object  | |
+| title | 标题 | string | Page Not Found |
+| content | 内容 |  string | Sorry, but the page you are looking for has note been found. Try checking the URL for error|
+
+### Report
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+| className     | className | string  | |
+| style     | style | object  | |
+| top     | 元素的顶部边缘 | number | |
+| src     | 规定在 iframe 中显示的文档的 URL | string | |
+
+  [1]: https://yemuguliunian.github.io/rc-layout/doc/demo/curd.png
+  [2]: https://yemuguliunian.github.io/rc-layout/doc/demo/tree.png
+  [3]: https://yemuguliunian.github.io/rc-layout/doc/demo/view.png
