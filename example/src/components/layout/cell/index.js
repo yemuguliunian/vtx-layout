@@ -6,7 +6,7 @@ import ItemFooter from './ItemFooter';
  
 Cell.Item = CellItem;
 Cell.Item.Title = ItemTitle;
-Cell.Item.Body = ItemTitle;
+Cell.Item.Body = ItemBody;
 Cell.Item.Footer = ItemFooter;
 
 export default Cell;
