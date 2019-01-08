@@ -274,3 +274,6 @@
   bottom: 5px;
   top: 48px;
 }
+.vtx_report iframe {
+  border-width: 0;
+}
