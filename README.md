@@ -113,7 +113,7 @@ import { Page, Flex } from 'rc-layout';
                 isExpandAll="openAll"
             />
         </Flex.Left>
-        <Flex.Right>
+        <Flex.Right leftWidth={250}>
             {/*curd示例*/}
         </Flex.Right>
     </Flex>
