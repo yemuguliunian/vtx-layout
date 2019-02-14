@@ -13,6 +13,7 @@ export { default as TableWrap } from './wrap/TableWrap';
 export { default as ModalBodyWrap } from './wrap/ModalBodyWrap';
 export { default as Flex } from './flex';
 export { default as Cell } from './cell';
+export { default as Form } from './form';
 
 // 小部件
 export { default as Button } from './pendant/Button';

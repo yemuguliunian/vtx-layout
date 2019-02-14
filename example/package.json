@@ -17,6 +17,7 @@
     "immutable": "^3.8.2",
     "lodash": "^4.17.11",
     "moment": "2.20.1",
+    "rc-layout": "^1.0.7",
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "vtx-ui": "latest"

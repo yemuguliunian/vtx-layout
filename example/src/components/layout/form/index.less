@@ -1,0 +1,46 @@
+// Form
+.vtx_form {
+    display: table;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 12px;
+    vertical-align: top;
+    &_title {
+        display: inline-block;
+        width: 120px;
+        text-align: right;
+        vertical-align: top;
+        line-height: 39.9999px;
+        overflow: hidden;
+        white-space: nowrap;
+        label {
+            color: rgba(0,0,0,0.85);
+            &:after {
+                content: ':';
+                margin: 0 8px 0 2px;
+                position: relative;
+                top: -0.5px;
+            };
+        }
+        &_required {
+            &:before {
+                display: inline-block;
+                margin-right: 4px;
+                content: '*';
+                font-family: SimSun,sans-serif;
+                line-height: 1;
+                font-size: 14px;
+                color: #f5222d;
+            };
+        }
+        &_bold {
+            font-weight: bold;
+        }
+    }
+    &_content {
+        display: table-cell;
+        vertical-align: top;
+        width: 100%;
+        line-height: 39.9999px;
+    }
+}

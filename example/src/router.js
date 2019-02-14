@@ -23,6 +23,9 @@ const routes = [{
 }, {
     path: '/report',
     component: () => import('./routes/REPORT'),
+}, {
+    path: '/test',
+    component: () => import('./routes/Test'),
 }];
 
 function RouterConfig({ history, app }) {
