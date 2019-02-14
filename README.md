@@ -29,6 +29,10 @@ $ import { NotFound } from 'rc-layout';
 $ import { Report } from 'rc-layout';
 ```
 
+## API
+
+- [Page](#Page)
+
 ## 示例
 #### 1，基础CURD布局
 ##### 效果图
