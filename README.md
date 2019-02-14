@@ -13,6 +13,7 @@ $ import { Content } from 'rc-layout';
 $ import { TableWrap } from 'rc-layout';
 $ import { ModalBodyWrap } from 'rc-layout';
 $ import { Flex } from 'rc-layout';
+$ import { Form } from 'rc-layout';
 
 // 小部件
 $ import { Button } from 'rc-layout';
