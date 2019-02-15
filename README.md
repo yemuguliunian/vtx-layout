@@ -38,6 +38,7 @@ $ import { Report } from 'rc-layout';
 - [RadioWrap](#RadioWrap)
 - [ModalBodyWrap](#ModalBodyWrap)
 - [Flex](#Flex)
+- [Form](#Form)
 - [CountDown](#CountDown)
 - [TimeBox](#TimeBox)
 - [Nodata](#Nodata)
@@ -115,6 +116,26 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | ------------- |-------------| -----|-----|
 | className     | className | string  | |
 | style     | style | object  | |
+
+### Form
+表单
+```js
+	<Form label="名称" required>
+		<Input style={{width : '200px'}}/>
+	</Form>
+```
+
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+| className     | className | string  | |
+| style     | style | object  | |
+| label | 标题 | string | |
+| labelWidth | 标题宽度 | number | - |
+| required | 必须 | boolean | false |
+| bold | 粗体 | boolean | true |
+| labelStyle | label style | object | |
+| labelClass | label className | string | |
+| contentClass | props.children className | string | |
 
 #### Flex.Left
 | 参数        | 说明           | 类型  | 默认值 |
