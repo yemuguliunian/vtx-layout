@@ -117,6 +117,20 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | className     | className | string  | |
 | style     | style | object  | |
 
+#### Flex.Left
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+| className     | className | string  | |
+| style     | style | object  | |
+| width | 宽 | number | 250 |
+
+#### Flex.Right
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+| className     | className | string  | |
+| style     | style | object  | |
+|leftWidth | 宽（和Flex.Left width一致）| number | 250 |
+
 ### Form
 表单布局
 ```js
@@ -136,20 +150,6 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | labelStyle | label style | object | |
 | labelClass | label className | string | |
 | contentClass | props.children className | string | |
-
-#### Flex.Left
-| 参数        | 说明           | 类型  | 默认值 |
-| ------------- |-------------| -----|-----|
-| className     | className | string  | |
-| style     | style | object  | |
-| width | 宽 | number | 250 |
-
-#### Flex.Right
-| 参数        | 说明           | 类型  | 默认值 |
-| ------------- |-------------| -----|-----|
-| className     | className | string  | |
-| style     | style | object  | |
-|leftWidth | 宽（和Flex.Left width一致）| number | 250 |
 
 ### CountDown
 倒计时刷新数据
