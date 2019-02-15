@@ -118,7 +118,7 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | style     | style | object  | |
 
 ### Form
-表单
+表单布局
 ```js
 <Form label="名称" required>
     <Input style={{width : '200px'}}/>
