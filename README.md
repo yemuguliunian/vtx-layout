@@ -16,7 +16,6 @@ $ import { Flex } from 'rc-layout';
 $ import { Form } from 'rc-layout';
 
 // 小部件
-$ import { Button } from 'rc-layout';
 $ import { TimeBox } from 'rc-layout';
 $ import { CountDown } from 'rc-layout';
 
@@ -39,7 +38,6 @@ $ import { Report } from 'rc-layout';
 - [RadioWrap](#RadioWrap)
 - [ModalBodyWrap](#ModalBodyWrap)
 - [Flex](#Flex)
-- [Button](#Button)
 - [CountDown](#CountDown)
 - [TimeBox](#TimeBox)
 - [Nodata](#Nodata)
@@ -131,14 +129,6 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | className     | className | string  | |
 | style     | style | object  | |
 |leftWidth | 宽（和Flex.Left width一致）| number | 250 |
-
-### Button
-立意 ： 为了按钮Icon图表和样式的统一管理
-
-| 参数        | 说明           | 类型  | 默认值 |
-| ------------- |-------------| -----|-----|
-| fType     | 类型 | string（add:新增，view:查看，edit:修改，delete:删除，import:导入）  | |
-| ... | 参考antd Button |  |  |
 
 ### CountDown
 倒计时刷新数据
