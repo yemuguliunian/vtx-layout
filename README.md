@@ -187,7 +187,7 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | ------------- |-------------| -----|-----|
 | active     | 是否展示动画效果 | boolean  | false |
 | loading     | 为 true 时，显示占位图。反之则直接展示子组件 | boolean  | - |
-| form | 	是否显示表单占位图 | boolean | SkeletonFormProps | true |
+| form | 	是否显示表单占位图 | boolean \| SkeletonFormProps | true |
 
 #### SkeletonFormProps
 
