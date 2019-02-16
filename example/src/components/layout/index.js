@@ -23,6 +23,7 @@ export { default as CountDown } from './pendant/CountDown';
 // 其它
 export { default as ReactDoucmentTitle } from './other/react-doucment-title.js';
 export { default as ScrollableRow } from './other/scrollableRow';
+export { default as Skeleton } from './other/skeleton';
 
 // 基础页面
 export { default as Nodata } from './page/Nodata';
