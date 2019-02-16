@@ -22,6 +22,7 @@ $ import { CountDown } from 'rc-layout';
 // 其它
 $ import { ReactDoucmentTitle } from 'rc-layout';
 $ import { ScrollableRow } from 'rc-layout';
+$ import { Skeleton } from 'rc-layout';
 
 // 基础页面
 $ import { Nodata } from 'rc-layout';
@@ -41,6 +42,7 @@ $ import { Report } from 'rc-layout';
 - [Form](#Form)
 - [CountDown](#CountDown)
 - [TimeBox](#TimeBox)
+- [Skeleton](#Skeleton) 
 - [Nodata](#Nodata)
 - [NotFound](#NotFound)
 - [Report](#Report)
@@ -177,6 +179,23 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | style     | style | object  | |
 | tip | 提示语 | string | 暂无数据 |
 | src | 图片 |  string | |
+
+### Skeleton
+骨架屏
+
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+| active     | 是否展示动画效果 | boolean  | false |
+| loading     | 为 true 时，显示占位图。反之则直接展示子组件 | boolean  | - |
+| form | 	是否显示表单占位图 | boolean | SkeletonFormProps | true |
+
+#### SkeletonFormProps
+
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+| rows     | 行 | number  | 4 |
+| cols     | 列 | number  | 2 |
+| gutter | 	间距 | number | 8px |
 
 ### NotFound
 404
