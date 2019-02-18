@@ -22,6 +22,7 @@ class CountDown extends React.Component {
 	static defaultProps = {
 		count : 10,
         manual : true,
+        automatic : false,
         isDestroy : false
 	}
 
@@ -30,12 +31,15 @@ class CountDown extends React.Component {
 
         this.state = {
             count : props.count,
-            check : true
+            check : props.automatic
         };
     }
 
     componentDidMount(){
-        this.timer = setInterval(()=>{this.countDown()},1000);
+        const { check } = this.state;
+        if(check) {
+            this.timer = setInterval(()=>{this.countDown()},1000);
+        }
     }
 
     componentWillUnmount(){
