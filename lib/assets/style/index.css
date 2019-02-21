@@ -20,7 +20,7 @@
   height: 100%;
   position: relative;
   background-color: #fff;
-  color: #333;
+  /*color: @font-color-base;*/
   font-size: 12px;
   min-width: 910px;
   overflow-x: hidden;
