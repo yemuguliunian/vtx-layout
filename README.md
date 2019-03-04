@@ -32,20 +32,20 @@ $ import { Report } from 'rc-layout';
 
 ## API
 
-- [Page](#Page)
-- [Content](#Content)
-- [BtnWrap](#BtnWrap)
-- [TableWrap](#TableWrap)
-- [RadioWrap](#RadioWrap)
-- [ModalBodyWrap](#ModalBodyWrap)
-- [Flex](#Flex)
-- [Form](#Form)
-- [CountDown](#CountDown)
-- [TimeBox](#TimeBox)
-- [Skeleton](#Skeleton) 
-- [Nodata](#Nodata)
-- [NotFound](#NotFound)
-- [Report](#Report)
+- [Page](#Page)    # 页面
+- [Content](#Content)    # 内容
+- [BtnWrap](#BtnWrap)    # 按钮块
+- [TableWrap](#TableWrap)    # 表格容器
+- [RadioWrap](#RadioWrap)    # 顶部radio容器
+- [ModalBodyWrap](#ModalBodyWrap)    # 废弃
+- [Flex](#Flex)    # 左右布局
+- [Form](#Form)    # 表单布局
+- [CountDown](#CountDown)    # 倒计时刷新数据
+- [TimeBox](#TimeBox)    # 时间沙盒
+- [Skeleton](#Skeleton)    # 骨架屏
+- [Nodata](#Nodata)    # 无数据
+- [NotFound](#NotFound)    # 404
+- [Report](#Report)    # 报表
 
 ### Page
 页面
