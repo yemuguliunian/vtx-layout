@@ -32,7 +32,7 @@ $ import { Report } from 'rc-layout';
 
 ## API
 
-- # 页面[Page](#Page)    
+- # 页面 [Page](#Page)    
 - # 内容[Content](#Content)    
 - # 按钮块[BtnWrap](#BtnWrap)    
 - # 表格容器[TableWrap](#TableWrap)   
