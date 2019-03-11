@@ -2,7 +2,7 @@ import React from 'react';
 
 import { VtxGrid, VtxDatagrid } from 'vtx-ui';
 import { 
-    Page, RadioWrap, Content, Cell
+    Page, RadioWrap, Content, Cell, ChemicalFormula
 } from '../components/layout';
 
 import { Radio, message, Input } from 'antd';
@@ -43,6 +43,7 @@ function VIEW() {
                         </Cell.Item.Body>
                     </Cell.Item>
                 </Cell>
+                <Cell><ChemicalFormula value={'NH3'}/></Cell>
             </Content>
         </Page>
     );

@@ -29,3 +29,6 @@ export { default as Skeleton } from './other/skeleton';
 export { default as Nodata } from './page/Nodata';
 export { default as NotFound } from './page/NotFound';
 export { default as Report } from './page/Report';
+
+// 化学式
+export { default as ChemicalFormula } from './chemicalFormula';
