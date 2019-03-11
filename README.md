@@ -162,6 +162,7 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | manual | 是否显示手动刷新 | boolean | true | 
 | automatic | 初始是否选中自动刷新 | boolean | false | 
 | isDestroy | 是否直接销毁定时器（适用于tab切换场景）| boolean | false |
+| onCheck | checkbox选中取消时的回调 | function | |
 | refresh | 刷新回调函数，在此执行数据刷新 | function | |
 
 ### TimeBox
