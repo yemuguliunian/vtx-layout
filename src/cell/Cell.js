@@ -4,7 +4,7 @@
 import React from 'react';
 
 import container from '../Container';
-import '../assets/style/index.less';
+import './index.less';
 
 function Cell(props) {
 

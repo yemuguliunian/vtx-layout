@@ -1,0 +1,26 @@
+@import (reference) '../assets/style/mixins/index.less';
+
+// Cell
+.vtx_cell {
+    padding: 10px;
+    position: relative;
+    transition: all @effect-duration @ease-out;
+    .vtx_cell_item {
+        display: inline-block;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .vtx_cell_itemTitle {
+        display: inline-block;
+        .font-weight();
+    }
+    .vtx_cell_itemBody {
+        display: inline-block;
+    }
+    .vtx_cell_itemFooter {
+        display: inline-block;
+        float: right;
+    }
+}

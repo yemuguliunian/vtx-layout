@@ -1,0 +1,40 @@
+.vtx-skeleton {
+  display: block;
+  width: 100%;
+}
+.vtx-skeleton-form-item {
+  margin-top: 16px;
+  display: inline-block;
+  overflow: hidden;
+}
+.vtx-skeleton-form-cell {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+  float: left;
+}
+.vtx-skeleton-form-cell div {
+  background: #f2f2f2;
+  height: 16px;
+}
+.vtx-skeleton-form-title {
+  width: 35%;
+}
+.vtx-skeleton-form-content {
+  width: 65%;
+}
+.vtx-skeleton.vtx-skeleton-active .vtx-skeleton-form-cell div {
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  animation: vtx-skeleton-loading 1.4s ease infinite;
+}
+@keyframes vtx-skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

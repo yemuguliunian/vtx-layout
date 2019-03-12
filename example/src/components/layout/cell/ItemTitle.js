@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import container from '../Container';
-import '../assets/style/index.less';
+import './index.less';
 
 function ItemTitle(props) {
 

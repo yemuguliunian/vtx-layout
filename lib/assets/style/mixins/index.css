@@ -1,0 +1,60 @@
+/**
+ * 相对定位
+ */
+/**
+ * 绝对定位
+ */
+/**
+ * 阴影效果
+ * @h 必需。水平阴影的位置。允许负值。
+ * @v 必需。垂直阴影的位置。允许负值。
+ * @blur 可选。模糊距离。
+ * @spread 可选。阴影的尺寸。
+ * @color 可选。阴影的颜色。
+ * 0 2px 19px 0 rgba(0, 0, 0, 0.05)
+ * 0 4px 13px -3px rgba(0, 0, 0, 0.10196)
+ */
+/**
+ * 字体粗细
+ */
+/**
+ * h5标题处理
+ */
+.h5 {
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+.h5:before {
+  content: '';
+  width: 4px;
+  display: inline-block;
+  height: 16px;
+  background-color: #108ee9;
+  margin-right: 6px;
+  position: relative;
+  top: 3px;
+}
+/**
+ * y轴滚动
+ */
+.overflow-y {
+  overflow: hidden;
+  overflow-y: auto;
+}
+/**
+ * 美化滚动条
+ */
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: hsla(0, 0%, 80%, 0.08);
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  background-color: rgba(180, 180, 180, 0.5);
+}
+.warn {
+  color: #f04134;
+}

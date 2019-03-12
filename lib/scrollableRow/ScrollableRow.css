@@ -1,0 +1,79 @@
+.scroll-row-container {
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  position: relative;
+  white-space: nowrap;
+  margin-bottom: -1px;
+  zoom: 1;
+  transition: padding 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);
+}
+.scroll-row-container-scrolling {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.scroll-row-prev,
+.scroll-row-next {
+  user-select: none;
+  z-index: 1;
+  line-height: 36px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  text-align: center;
+  transition: width 0.3s cubic-bezier(0.08, 0.82, 0.17, 1), opacity 0.3s cubic-bezier(0.08, 0.82, 0.17, 1), color 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);
+}
+.scroll-row-prev-icon,
+.scroll-row-next-icon {
+  font-style: normal;
+  font-weight: 700;
+  font-variant: normal;
+  line-height: inherit;
+  vertical-align: baseline;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: none;
+}
+.scroll-row-prev:before,
+.scroll-row-next:before {
+  display: block;
+}
+.scroll-row-prev {
+  left: 0;
+}
+.scroll-row-next {
+  right: 2px;
+}
+.scroll-row-btn-disabled {
+  cursor: default;
+  color: #ccc;
+}
+.scroll-row-arrow-show {
+  opacity: 1;
+  width: 32px;
+  height: 100%;
+  pointer-events: auto;
+}
+.scroll-row-nav-wrap {
+  overflow: hidden;
+}
+.scroll-row-nav-scroll {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.scroll-row-nav {
+  box-sizing: border-box;
+  padding-left: 0;
+  transition: transform 0.3s cubic-bezier(0.08, 0.82, 0.17, 1), -webkit-transform 0.3s cubic-bezier(0.08, 0.82, 0.17, 1);
+  position: relative;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}

@@ -1,0 +1,51 @@
+.vtx_flex_layout {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: auto;
+  flex: auto;
+  height: 100%;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.vtx_flex_layout .vtx_flex_left {
+  transition: all 0.2s;
+  position: relative;
+  z-index: 1000;
+  flex: 0 0 250px;
+  max-width: 250px;
+  min-width: 250px;
+  width: 250px;
+  height: 100%;
+  box-shadow: 5px 0px 5px -5px #bfbfbf;
+}
+.vtx_flex_layout .vtx_flex_right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: auto;
+  flex: auto;
+  position: relative;
+  padding: 0;
+}
+.vtx_flex_layout_d {
+  height: 100%;
+  overflow: hidden;
+}
+.vtx_flex_layout_d .vtx_flex_left {
+  position: relative;
+  float: left;
+  width: 250px;
+  z-index: 1000;
+  box-shadow: 5px 0px 5px -5px #bfbfbf;
+}
+.vtx_flex_layout_d .vtx_flex_right {
+  position: relative;
+  margin-left: 250px;
+}
+.vtx_flex_layout_d .vtx_flex_left,
+.vtx_flex_layout_d .vtx_flex_right {
+  height: 100%;
+}

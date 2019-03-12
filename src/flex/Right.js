@@ -8,7 +8,7 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../assets/style/index.less';
+import './index.less';
 
 import container from '../Container';
 import { isCompatible } from '../util/element';

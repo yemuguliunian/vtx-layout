@@ -1,0 +1,43 @@
+.vtx_form {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 12px;
+  vertical-align: top;
+}
+.vtx_form_title {
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  vertical-align: top;
+  line-height: 39.9999px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.vtx_form_title label {
+  color: rgba(0, 0, 0, 0.85);
+}
+.vtx_form_title label:after {
+  content: ':';
+  margin: 0 8px 0 2px;
+  position: relative;
+  top: -0.5px;
+}
+.vtx_form_title_required:before {
+  display: inline-block;
+  margin-right: 4px;
+  content: '*';
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  font-size: 14px;
+  color: #f5222d;
+}
+.vtx_form_title_bold {
+  font-weight: bold;
+}
+.vtx_form_content {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+  line-height: 39.9999px;
+}

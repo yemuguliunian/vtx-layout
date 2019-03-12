@@ -11,13 +11,13 @@ $ import { RadioWrap } from 'rc-layout';
 $ import { BtnWrap } from 'rc-layout';
 $ import { Content } from 'rc-layout';
 $ import { TableWrap } from 'rc-layout';
-$ import { ModalBodyWrap } from 'rc-layout';
 $ import { Flex } from 'rc-layout';
 $ import { Form } from 'rc-layout';
 
 // 小部件
 $ import { TimeBox } from 'rc-layout';
 $ import { CountDown } from 'rc-layout';
+$ import { ChemicalFormula } from 'rc-layout';
 
 // 其它
 $ import { ReactDoucmentTitle } from 'rc-layout';
@@ -37,11 +37,11 @@ $ import { Report } from 'rc-layout';
 - [BtnWrap](#BtnWrap)    # 按钮块
 - [TableWrap](#TableWrap)   # 表格容器
 - [RadioWrap](#RadioWrap)    # 顶部radio容器
-- [ModalBodyWrap](#ModalBodyWrap)    # 废弃
 - [Flex](#Flex)    # 左右布局
 - [Form](#Form)    # 表单布局
 - [CountDown](#CountDown)    # 倒计时刷新数据
 - [TimeBox](#TimeBox)    # 时间沙盒
+- [ChemicalFormula](#ChemicalFormula)    # 化学式
 - [Skeleton](#Skeleton)    # 骨架屏
 - [Nodata](#Nodata)    # 无数据
 - [NotFound](#NotFound)    # 404
@@ -101,15 +101,6 @@ $ import { Report } from 'rc-layout';
 | style     | style | object  | |
 | space     | 内间距 | number\|string  | |
 | shadow | 是否显示阴影 | boolean | true |
-
-### ModalBodyWrap
-moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
-
-| 参数        | 说明           | 类型  | 默认值 |
-| ------------- |-------------| -----|-----|
-| className     | className | string  | |
-| style     | style | object  | |
-| loading | 加载中 | boolean | false |
 
 ### Flex
 左右布局
@@ -171,6 +162,13 @@ moadl Body内容容器(主要设置了Y轴可滚动，高度设置为50vh)
 | 参数        | 说明           | 类型  | 默认值 |
 | ------------- |-------------| -----|-----|
 |..| |||
+
+### ChemicalFormula
+化学式
+
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+|value| 值 | string | |
 
 ### Nodata
 无数据

@@ -1,0 +1,89 @@
+@import '../themes.less';
+@import './size.less';
+
+/**
+ * 相对定位
+ */
+.relative(@height: 100%, @width: 100%) {
+	position: relative;
+	.size(@width, @height);
+}
+
+/**
+ * 绝对定位
+ */
+.absolute(@top: 0, @right: 0, @left: 0, @bottom: 0) {
+	position: absolute;
+	top: @top;
+	right: @right;
+	left: @left;
+	bottom: @bottom;
+}
+
+/**
+ * 阴影效果
+ * @h 必需。水平阴影的位置。允许负值。
+ * @v 必需。垂直阴影的位置。允许负值。
+ * @blur 可选。模糊距离。
+ * @spread 可选。阴影的尺寸。
+ * @color 可选。阴影的颜色。
+ * 0 2px 19px 0 rgba(0, 0, 0, 0.05)
+ * 0 4px 13px -3px rgba(0, 0, 0, 0.10196)
+ */
+.shadow(@h: 0, @v: 4px, @blur: 13px, @spread: -3px, @color: rgba(0, 0, 0, 0.10196)) {
+	box-shadow: @h @v @blur @spread @color;
+}
+
+/**
+ * 字体粗细
+ */
+.font-weight(@size: @font-weight-base) {
+	font-weight: @size;
+}
+
+/**
+ * h5标题处理
+ */
+.h5 {
+	padding: 15px 0;
+	.font-weight();
+	font-size: @font-size-lg;
+	&:before {
+		content: '';
+	    width: 4px;
+	    display: inline-block;
+	    height: 16px;
+	    background-color: @primary-color;
+	    margin-right: 6px;
+	    position: relative;
+	    top: 3px;
+	};
+}
+
+/**
+ * y轴滚动
+ */
+.overflow-y {
+	overflow: hidden;
+ 	overflow-y: auto;
+}
+
+/**
+ * 美化滚动条
+ */
+.scrollbar {
+	&::-webkit-scrollbar {
+    	width: 5px;
+        height: 5px;
+    	background-color: hsla(0, 0%, 80%, 0.08);
+	}
+	&::-webkit-scrollbar-thumb {
+	    border-radius: @border-radius-base - 1;
+	    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,.3);
+	    background-color: rgba(180, 180, 180, 0.5);
+	}
+}
+
+.warn {
+	color : @error-color;
+}

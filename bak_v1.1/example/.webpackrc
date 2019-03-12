@@ -1,0 +1,20 @@
+{
+  "entry": "src/index.js",
+  "disableCSSModules" : true,
+  "extraBabelPlugins": [
+    ["import", {"libraryName": "antd", "libraryDirectory": "lib", "style": "css" }, "antd"],
+    ["import", {"libraryName": "vtx-ui", "camel2DashComponentName": false}, "vtx-ui"]
+  ],
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-remove-console"
+      ]
+    }
+  }
+}

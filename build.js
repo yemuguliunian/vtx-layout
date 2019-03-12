@@ -33,11 +33,9 @@ function build(srcFilePath) {
 								readable=fs.createReadStream(_src);//创建读取流
 			                    writable=fs.createWriteStream(_dst);//创建写入流
 			                    readable.pipe(writable);
-			                    if(/\\assets\\style\\index\.(less)$/.test(_src)) {
-			                    	compileLess(_src, _dst);
-			                    }
+			                    compileLess(_src, _dst);
 	                    	}
-	                    	if(/\.(css|jpg|png)$/.test(filename)) {
+	                    	if(/\.(css|jpg|png|less)$/.test(filename)) {
 								readable=fs.createReadStream(_src);//创建读取流
 			                    writable=fs.createWriteStream(_dst);//创建写入流
 			                    readable.pipe(writable);

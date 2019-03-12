@@ -1,0 +1,10 @@
+.vtx_btn_wrap {
+  position: relative;
+  padding: 10px;
+}
+.vtx_btn_wrap button {
+  margin-right: 10px;
+}
+.vtx_btn_wrap button:last-child {
+  margin-right: 0;
+}

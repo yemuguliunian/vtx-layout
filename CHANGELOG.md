@@ -1,3 +1,10 @@
+## 1.2.0 [2019-03-12]
+
+* Update: 项目结构变化
+* Delete: ModalBodyWrap 废弃
+* Delete: Button 废弃
+* Feature: 新增 ChemicalFormula 化学式 主要处理下标
+
 ## 1.1.5 [2019-03-11]
 
 * Update: CountDown 新增onCheck回调

@@ -1,0 +1,13 @@
+@import (reference) '../assets/style/mixins/index.less';
+
+// BtnWrap
+.vtx_btn_wrap {
+	position: relative;
+	padding: @padding-default-base;
+    button {
+        margin-right: @spacing-base;
+        &:last-child {
+        	margin-right: 0;
+        }
+    }
+}

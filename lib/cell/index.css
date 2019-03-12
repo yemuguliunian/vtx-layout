@@ -1,0 +1,23 @@
+.vtx_cell {
+  padding: 10px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.vtx_cell .vtx_cell_item {
+  display: inline-block;
+  margin-right: 20px;
+}
+.vtx_cell .vtx_cell_item:last-child {
+  margin-right: 0;
+}
+.vtx_cell .vtx_cell_itemTitle {
+  display: inline-block;
+  font-weight: bold;
+}
+.vtx_cell .vtx_cell_itemBody {
+  display: inline-block;
+}
+.vtx_cell .vtx_cell_itemFooter {
+  display: inline-block;
+  float: right;
+}

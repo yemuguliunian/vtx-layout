@@ -3,10 +3,10 @@ import React from 'react';
 import { VtxGrid, VtxDatagrid } from 'vtx-ui';
 import { 
     Page, BtnWrap, Content, TableWrap, 
-    Button, TimeBox, CountDown
+    TimeBox, CountDown
 } from '../components/layout';
 
-import { Input, message } from 'antd';
+import { Input, message, Button } from 'antd';
 
 function CURD() {
     return (
@@ -17,13 +17,13 @@ function CURD() {
             <Content top={48}>
                 {/*按钮*/}
                 <BtnWrap >
-                	<Button fType="add">新增</Button>
-                    <Button fType="view">查看</Button>
-                	<Button fType="edit">编辑</Button>
-                    <Button fType="delete">删除</Button>
-                    <Button fType="import">导入</Button>
-                    <Button fType="export">导出</Button>
-                    <Button icon="sync">同步</Button>
+                	<Button >新增</Button>
+                    <Button >查看</Button>
+                	<Button >编辑</Button>
+                    <Button >删除</Button>
+                    <Button >导入</Button>
+                    <Button >导出</Button>
+                    <Button >同步</Button>
                 </BtnWrap>
                 {/*表格*/}
             	<TableWrap top={48}>

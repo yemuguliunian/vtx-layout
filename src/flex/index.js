@@ -4,7 +4,7 @@
  * 需考虑是否支持flex布局，故采用两套布局
  */
 import React from 'react';
-import '../assets/style/index.less';
+import './index.less';
 
 import Basic from '../Basic';
 import Left from './Left';

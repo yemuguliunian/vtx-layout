@@ -43,7 +43,7 @@ function VIEW() {
                         </Cell.Item.Body>
                     </Cell.Item>
                 </Cell>
-                <Cell><ChemicalFormula value={'NH3'}/></Cell>
+                <Cell><ChemicalFormula value={'SO2'}/></Cell>
             </Content>
         </Page>
     );
