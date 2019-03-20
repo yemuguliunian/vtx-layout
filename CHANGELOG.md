@@ -1,3 +1,7 @@
+## 1.2.2 [2019-03-19]
+
+* Feature: ChemicalFormula 化学式过滤不包含数字的字符串
+
 ## 1.2.1 [2019-03-14]
 
 * BUG: 修复 CountDown automatic为false时 页签切换切回时倒计时数字跳转的问题
