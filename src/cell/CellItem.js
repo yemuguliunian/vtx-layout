@@ -29,7 +29,10 @@ function CellItem(props) {
 }
 
 CellItem.propTypes = {
-    width : PropTypes.number || PropTypes.string
+    width : PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ])
 }
 
 export default container(

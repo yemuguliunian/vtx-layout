@@ -52,5 +52,8 @@ export default container()(Content);
 
 Content.propTypes = {
     scrollY : PropTypes.bool,
-    height : PropTypes.number
+    height : PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ])
 }

@@ -1,5 +1,7 @@
 ## 1.2.2 [2019-03-19]
 
+* Feature: Content @props {[height]} 类型 number || string
+* BUG : Cell.Item @props {[width]} 类型检测修复PropTypes.oneOfType
 * Feature: ChemicalFormula 化学式过滤不包含数字的字符串
 
 ## 1.2.1 [2019-03-14]
