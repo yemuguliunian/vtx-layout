@@ -2,7 +2,7 @@ import React from 'react';
 
 import { VtxGrid, } from 'vtx-ui';
 import { 
-    Page, Report
+    Page, Iframe
 } from '../components/layout';
 
 import { Input, message } from 'antd';
@@ -13,7 +13,7 @@ function CURD() {
         	<VtxGrid gridweight={[1]} titles={['测试']}>
         		<Input/>
     		</VtxGrid>
-            <Report src=""/>
+            <Iframe top={48} src=""/>
         </Page>
     );
 }

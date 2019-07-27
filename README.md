@@ -18,6 +18,7 @@ $ import { Form } from 'rc-layout';
 $ import { TimeBox } from 'rc-layout';
 $ import { CountDown } from 'rc-layout';
 $ import { ChemicalFormula } from 'rc-layout';
+$ import { CountUp } from 'rc-layout';
 
 // 其它
 $ import { ReactDoucmentTitle } from 'rc-layout';
@@ -42,10 +43,11 @@ $ import { Report } from 'rc-layout';
 - [CountDown](#CountDown)    # 倒计时刷新数据
 - [TimeBox](#TimeBox)    # 时间沙盒
 - [ChemicalFormula](#ChemicalFormula)    # 化学式
+- [CountUp](#CountUp)    # 数字滚动
 - [Skeleton](#Skeleton)    # 骨架屏
 - [Nodata](#Nodata)    # 无数据
 - [NotFound](#NotFound)    # 404
-- [Report](#Report)    # 报表
+- [Iframe](#Iframe)    # iframe
 
 ### Page
 页面
@@ -161,7 +163,7 @@ $ import { Report } from 'rc-layout';
 
 | 参数        | 说明           | 类型  | 默认值 |
 | ------------- |-------------| -----|-----|
-|..| |||
+| format | 自定义显示模板（参考moment） | String | YYYY-MM-DD HH:mm:ss |
 
 ### ChemicalFormula
 化学式
@@ -169,6 +171,17 @@ $ import { Report } from 'rc-layout';
 | 参数        | 说明           | 类型  | 默认值 |
 | ------------- |-------------| -----|-----|
 |value| 值 | string | |
+
+### CountUp
+| 参数        | 说明           | 类型  | 默认值 |
+| ------------- |-------------| -----|-----|
+|count| 数值 | Number | 0 |
+|decimals| 显示小数点后几位 | Number | 2 |
+|suffix| 后缀 | String |  |
+|step| 步数（1-10） | Number | 10 |
+|interval| 跳动间隔时间 | Number | 30 |
+|format| 自定义格式 | function(value) {} |  |
+|mode| 类型（目前只支持 easing）| string（oneof ['easing', 'simple', 'animate']） | easing |
 
 ### Nodata
 无数据
@@ -207,7 +220,7 @@ $ import { Report } from 'rc-layout';
 | title | 标题 | string | Page Not Found |
 | content | 内容 |  string | Sorry, but the page you are looking for has note been found. Try checking the URL for error|
 
-### Report
+### Iframe
 | 参数        | 说明           | 类型  | 默认值 |
 | ------------- |-------------| -----|-----|
 | className     | className | string  | |

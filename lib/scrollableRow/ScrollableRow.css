@@ -15,6 +15,7 @@
 }
 .scroll-row-prev,
 .scroll-row-next {
+  display: none;
   user-select: none;
   z-index: 1;
   line-height: 36px;
@@ -56,6 +57,7 @@
   color: #ccc;
 }
 .scroll-row-arrow-show {
+  display: inline-block;
   opacity: 1;
   width: 32px;
   height: 100%;

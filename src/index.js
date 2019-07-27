@@ -28,6 +28,8 @@ export { default as Form } from './form';
 export { default as TimeBox } from './timeBox';
 // 倒计时刷新数据
 export { default as CountDown } from './countDown';
+// 数字滚动
+export { default as CountUp } from './countUp';
 
 
 /************************其他**************************/
@@ -45,7 +47,7 @@ export { default as Nodata } from './nodata';
 // 404
 export { default as NotFound } from './notFound';
 // 报表
-export { default as Report } from './report';
+export { default as Iframe } from './iframe';
 
 
 // 化学式

@@ -63,7 +63,9 @@ class CountDown extends React.Component {
                     count : count
                 })
             } else {
-                this.timer = setInterval(()=>{this.countDown()},1000);
+                if(this.state.check) {
+                    this.timer = setInterval(()=>{this.countDown()}, 1000);
+                }
             }
         }
     }

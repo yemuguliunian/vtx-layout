@@ -1,12 +1,12 @@
-.vtx_report {
+.vtx_iframe {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   bottom: 5px;
-  top: 48px;
+  top: 0px;
 }
-.vtx_report iframe {
+.vtx_iframe iframe {
   border-width: 0;
 }

@@ -1,5 +1,5 @@
 /**
- * 报表页面(iframe嵌套)
+ * iframe嵌套
  * props
  * src : 规定在 iframe 中显示的文档的 URL
  * top : 元素的顶部边缘
@@ -13,7 +13,7 @@ import container from '../Container';
 
 import './index.less';
 
-function Report(props) {
+function Iframe(props) {
 	
 	const { src, className, style } = props;
 	
@@ -32,5 +32,5 @@ function Report(props) {
 }
 
 export default container(
-	{componentClass : "vtx_report"}
-)(Report);
+	{componentClass : "vtx_iframe"}
+)(Iframe);

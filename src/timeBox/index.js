@@ -6,19 +6,23 @@ import moment from 'moment';
 
 class TimeBox extends React.Component{
 
-    componentDidMount(){
-        this.timer = setInterval(()=>{this.refreshTime()},1000);
-    }
-
-    componentWillUnmount(){
-        clearInterval(this.timer);
-    }
+    static defaultProps = {
+        format: 'YYYY-MM-DD HH:mm:ss'
+    };
 
     constructor(props){
         super(props);
         this.state = {
             currentTime:this.getCurrentTime()
         }
+    }
+
+    componentDidMount(){
+        this.timer = setInterval(()=>{this.refreshTime()},1000);
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.timer);
     }
 
     refreshTime(){
@@ -35,14 +39,15 @@ class TimeBox extends React.Component{
     }
 
     getCurrentTime(){
+        let { format } = this.props;
         const d = new Date();
-        return moment().format('YYYY-MM-DD HH:mm:ss');
+        return moment().format(format);
     }
 
     render(){
         return (
             <span>
-                {`当前时间：${this.state.currentTime}`}
+                {`${this.state.currentTime}`}
             </span>
         )
     }

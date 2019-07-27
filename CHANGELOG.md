@@ -1,3 +1,10 @@
+## 1.3.0 [2019-07-24]
+
+* Feature: Iframe API 等同于 Report
+* Feature: 新增数值滚动 CountUp
+* Delete: Report 废弃
+* Update: TimeBox 时间沙盒 支持 format 自定义模板
+
 ## 1.2.2 [2019-03-19]
 
 * Feature: Content @props {[height]} 类型 number || string
